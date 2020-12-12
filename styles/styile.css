@@ -1,0 +1,138 @@
+
+.background {
+    background: #f72210;
+    color: white;
+  }
+  nav ul a {
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  nav ul a:hover {
+    color: #f72210;
+  }
+  
+  .navbar-items {
+    font-size: 15 px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  /* mobile stups*/
+  .logo {
+    max-width: 350px;
+    max-height: 80px;
+    width: 150px;
+    height: 45px;
+  }
+  
+  .first-button {
+    width: 92px;
+    font-size: 12px;
+    font-family: Roboto Condensed;
+    padding: 0 12px;
+    background-color: #ffe400;
+    letter-spacing: 1px;
+  }
+  
+  .h4 {
+     font-family: Roboto Condensed;
+     color: #03030366;
+     font-size: 16px;
+  }
+  .h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .img-link {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin: -20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .title-debate {
+    font-family: Roboto Condensed;
+    color: #03030366;
+    font-size: 16px;
+    border-bottom: 4px solid #4e4d4d66;
+    padding: 11px 0;
+  }
+  
+  .title2-debate {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Roboto Condensed;
+  }
+  
+  .author-debate {
+    font-family: Roboto Condensed;
+    color: #555555;
+    font-size: 14px;
+  }
+  
+  .span-width {
+    width: 30px;
+    margin-top: -11px;
+    margin-bottom: -11px;
+    z-index: 10;
+  }
+  
+  .last-title {
+    border-bottom: 4px solid #4e4d4d66;
+  }
+  .opinion-title {
+    font-family: Roboto Condensed;
+    color: #03030366;
+    font-size: 16px;
+    padding: 11px 0;
+  }
+  .card-title {
+    font-family: Roboto Condensed;
+    font-weight: bolder;
+    font-size: 16px;
+    color: black;
+    margin-top: 4px;
+  }
+  
+  .opinion-author {
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-weight: #555555;
+  }
+  /*
+  .background button {
+    font-size: 15px;
+  }
+  */
+  .hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .sec-1 img,
+  .sec-1 img {
+    width: 100%;
+  }
+  
+  
+  @media (min-width: 768px) {
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 1024px) {
+  
+    .logo {
+      max-width: 650px;
+      max-height: 90px;
+    }
+  
+  
+  }
+  
