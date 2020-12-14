@@ -14,7 +14,7 @@
   }
   
   .navbar-items {
-    font-size: 15 px;
+    font-size: 15px;
     font-family: 'Roboto Condensed', sans-serif;
   }
   
@@ -102,6 +102,12 @@
     font-family: Roboto Condensed;
     font-size: 14px;
     font-weight: #555555;
+  }
+  .title-morestories {
+    font-family: Roboto Condensed;
+    font-weight: bolder;
+    font-size: 17px;
+    color: black;
   }
   /*
   .background button {
