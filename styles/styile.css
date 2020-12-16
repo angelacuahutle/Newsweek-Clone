@@ -103,12 +103,25 @@
     font-size: 14px;
     font-weight: #555555;
   }
+
   .title-morestories {
     font-family: Roboto Condensed;
     font-weight: bolder;
     font-size: 17px;
     color: black;
   }
+
+  .title-myturn p {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: bold;
+    color:#03030380;
+  }
+
+  .media-body {
+    
+  }
+  
   /*
   .background button {
     font-size: 15px;
