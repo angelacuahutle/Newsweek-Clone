@@ -121,6 +121,6 @@ table {
   border-spacing: 0;
 }
 
-html {
+body {
   overflow-x: hidden !important;
 }
