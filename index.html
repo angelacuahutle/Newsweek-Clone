@@ -18,8 +18,10 @@
 </head>
 
 <body class="body">
-  <header class="w-100 d-lg-none sticky-top">
-    <nav class="">
+
+  <!-- this is normal header in desktop -->
+  <header class="container-fluid">
+    <nav class="w-100 d-lg-none sticky-top">
       <!-- this code is header in mobile -->
       <div class="d-flex align-items-center justify-content-between background">
         <img class="logo" src="./images/nwlogo.png" alt="Logo">
@@ -30,72 +32,95 @@
         </div>
       </div>
     </nav>
-  </header>
-  <!-- this is normal header in desktop -->
-  <header class="d-flex justify-content-center">
-    <header class="d-none d-lg-flex container-xl flex-column container-xl px-0 mx-0">
-      <div class="d-flex justify-content-between bg-color align-items-end p-3 bg-danger">
-        <div class="navbar-items">
-          <a href="#" class="text-light">18° CDMX, MX</a>
-          <p class="text-light">Thu, Dec 03, 2020</p>
-        </div>
-        <div class="">
-          <!-- <img class="logo" src="./images/nwlogo.png" alt="Logo"> -->
-          <svg class="lg-logo" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
-            style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
-            <g>
-              <path class="st0"
-                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
-              </path>
-            </g>
-          </svg>
-        </div>
-        <div>
-          <a href=""><span class="font-weight-bold text-light roboto">LOGIN</span></a>
-          <button type="button" class="btn btn-warning font-weight-bold rounded-pill roboto">SUBSCRIBE</button>
-        </div>
-      </div>
-      <nav class="row container">
-        <ul class="nav categories tags row">
-          <li class="nav-item border-right ml-2"><a href="#" class="nav-link"><span class="roboto">U.S.</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">World</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Business</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Tech & Science</span></a>
-          </li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Culture</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Newsgeek</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Sports</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Health</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">The Debate</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Vantage</span></a></li>
-          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Weather</span></a></li>
-          <div class="d-flex justify-content-start align-items-center lg-search-bar">
-            <input type="text" placeholder="Search">
-            <i class="fas fa-search" aria-hidden="true"></i>
-          </div>
-        </ul>
-      </nav>
-      <nav class="d-flex">
-        <ul class="nav trending tags">
-          <li class="nav-item"><a href="#" class="nav-link roboto">TRENDING</a></li>
-          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">JOE BIDEN</a></li>
-          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">DONALD TRUMP</a></li>
-          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">2020 ELECTION</a></li>
-          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">CORONAVIRUS</a></li>
-          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">STIMULUS PACKAGE</a></li>
-        </ul>
-      </nav>
 
-    </header>
+    <!-- this code is header in MID and LARGE -->
+    <div class=" justify-content-between bg-color align-items-end p-3 bg-danger d-none  d-lg-flex">
+      <div class="navbar-items">
+        <a href="#" class="text-light">18° CDMX, MX</a>
+        <p class="text-light">Thu, Dec 03, 2020</p>
+      </div>
+      <div class="">
+        <!-- <img class="logo" src="./images/nwlogo.png" alt="Logo"> -->
+        <svg class="lg-logo" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
+          style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+          <g>
+            <path class="st0"
+              d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <a href=""><span class="font-weight-bold text-light roboto">LOGIN</span></a>
+        <button type="button" class="btn btn-warning font-weight-bold rounded-pill roboto">SUBSCRIBE</button>
+      </div>
+    </div>
+    <nav class="row container top-nav d-none d-lg-flex">
+      <ul class="nav categories tags row">
+        <li class="nav-item border-right ml-2"><a href="#" class="nav-link"><span class="roboto">U.S.</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">World</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Business</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Tech & Science</span></a>
+        </li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Culture</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Newsgeek</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Sports</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Health</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">The Debate</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Vantage</span></a></li>
+        <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Weather</span></a></li>
+        <div class="d-flex justify-content-start align-items-center lg-search-bar">
+          <input type="text" placeholder="Search">
+          <i class="fas fa-search" aria-hidden="true"></i>
+        </div>
+      </ul>
+    </nav>
+    <nav class="d-none d-lg-flex second-nav">
+      <ul class="nav trending tags">
+        <li class="nav-item"><a href="#" class="nav-link roboto">TRENDING</a></li>
+        <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">JOE BIDEN</a></li>
+        <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">DONALD TRUMP</a></li>
+        <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">2020 ELECTION</a></li>
+        <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">CORONAVIRUS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">STIMULUS PACKAGE</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main container">
     <section class="top-section row">
 
-      <div class="col-md-5 col-lg-4">
+      <div class="col-md-5 col-lg-4 col-one">
         <!-- Featured Stories -->
-        <section class=" main-section">
-          <div class="d-flex flex-column">
+        <section class="col 2 container sec-2 d-flex d-md-none">
+          <article class="small-cards">
+
+            <h4 class="text-secondary font-weight-bolder h4  mb-2 border-bottom ">TOP STORY</h4>
+
+            <div class="card-group">
+              <article class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/sec2-img1.jpg" alt="" class="card-img-top" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-1 py-1 img-link">TOP
+                    STORY</a>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title h3"><a href="#" class="card-links text-dark">Without Another Stimulus, Economy
+                      Headed for
+                      Recession Early Next Year</a></h3>
+                  <p class="card-text">Economists have urged lawmakers to act and pass another round of stimulus for
+                    months
+                    amid partisan gridlock.</p>
+                </div>
+              </article>
+            </div>
+          </article>
+
+        </section>
+        <section class="main-section">
+          <div class="d-flex flex-column ">
             <h4 class="h4 font-weight-bolder mt-1 mb-2 text-secondary">FEATURED STORIES</h4>
             <article class="card-group">
               <div class="card">
@@ -198,12 +223,12 @@
           </div>
         </section>
       </div>
-      <div class="col-md-7 col-lg-4">
+      <div class="col-md-7 col-lg-4 col-two">
         <!-- Top Story -->
-        <section class="col 2 container sec-2">
-          <article class="small-cards">
+        <section class="col 2 container sec-2 ">
+          <article class="small-cards  d-none d-md-flex flex-md-column">
 
-            <h4 class="text-secondary font-weight-bolder mb-3 mt-4 h4 border-bottom border-4">TOP STORY</h4>
+            <h4 class="text-secondary font-weight-bolder h4  mb-2 border-bottom ">TOP STORY</h4>
 
             <div class="card-group">
               <article class="card">
@@ -228,7 +253,7 @@
 
         </section>
         <!-- My turn -->
-        <section class="d-flex flex-column container">
+        <section class="d-flex flex-column container px-0">
           <h4 class="text-secondary font-weight-bolder mb-3 mt-2 h4 border-bottom border-4">MY TURN</h4>
           <div class="d-md-flex">
             <div class="myturn-item col">
@@ -258,7 +283,7 @@
           </div>
         </section>
         <!-- Culture & Travel -->
-        <section class="d-flex flex-column container">
+        <section class="d-flex flex-column container ">
           <h4 class="text-secondary font-weight-bolder mb-3 mt-2 h4 border-bottom border-4">CULTURE & TRAVEL</h4>
           <div class="d-md-flex">
 
@@ -439,7 +464,7 @@
           </div>
         </section>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg-4 col-three">
         <!-- The Debate -->
         <section class="container">
           <article class="d-flex flex-column">
@@ -456,10 +481,10 @@
               </div>
             </div>
 
-            <span class="align-self-center text-center text-white rounded-circle bg-dark span-width">VS</span>
+            <span class="align-self-center text-center text-white rounded-circle bg-dark span-width py-2">VS</span>
 
-            <div class="d-flex flex-row-reverse justify-content-between border-top">
-              <img src="./images/card2.png" class="d-flex border-bottom-4" alt="" height="70px">
+            <div class="d-flex flex-row-reverse justify-content-between pt-4 border-top border-bottom">
+              <img src="./images/card2.png" class="d-flex " alt="" height="70px">
               <div class="p-3">
                 <a href="#" class="font-weight-bolder title2-debate">
                   <h6>Should Trump Concede? Not Yet</h6>
@@ -478,7 +503,7 @@
               <div class="d-flex mt-2 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card2.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">Cambridge Should Preserve the Freedom to
+                  <a href="#" class="font-weight-bold text-dark card-title">Cambridge Should Preserve the Freedom to
                     Disrespect</a>
                   <p class="mt-2 opinion-author">BY ARIF AHMED AND ROSS ANDERSON</p>
                 </div>
@@ -488,7 +513,7 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card1.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">The Electoral College Nightmare That Could Have
+                  <a href="#" class="font-weight-bold text-dark  card-title">The Electoral College Nightmare That Could Have
                     Happened</a>
                   <p class="mt-2 opinion-author">BY TOM ROGERS</p>
                 </div>
@@ -498,7 +523,7 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card2.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">There's No Stopping America's Political
+                  <a href="#" class="font-weight-bold text-dark card-title">There's No Stopping America's Political
                     Realignment</a>
                   <p class="mt-2 opinion-author">BY JOSH HAMMER</p>
                 </div>
@@ -508,10 +533,10 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card1.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">The Time Is Now for Saudi Arabia To Normalize
+                  <a href="#" class="font-weight-bold text-dark card-title">The Time Is Now for Saudi Arabia To Normalize
                     Relations
                     With Israel</a>
-                  <p>BY RICHARD GOLDBERG</p>
+                  <p class="mt-2 opinion-author">BY RICHARD GOLDBERG</p>
                 </div>
               </div>
             </div>
@@ -519,7 +544,7 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card2.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">A British Court Breaks Gender Fever</a>
+                  <a href="#" class="font-weight-bold text-dark card-title">A British Court Breaks Gender Fever</a>
                   <p class="mt-2 opinion-author">BY ABIGAIL SHRIER</p>
                 </div>
               </div>
@@ -528,7 +553,7 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card1.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title">San Francisco Jon Ossoff</a>
+                  <a href="#" class="font-weight-bold text-dark card-title">San Francisco Jon Ossoff</a>
                   <p class="mt-2 opinion-author">BY NEWT GINGRICH</p>
                 </div>
               </div>
@@ -537,7 +562,7 @@
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
                 <img src="./images/card2.png" class="align-content-start mr-3" alt="">
                 <div class="pt-2 multiple-card-title">
-                  <a href="#" class="font-weight-bold card-title"> Don't Lower the Medicare Eligibility Age</a>
+                  <a href="#" class="font-weight-bold text-dark card-title"> Don't Lower the Medicare Eligibility Age</a>
                   <p class="mt-2 opinion-author">BY SALLY C. PIPES</p>
                 </div>
               </div>
@@ -545,39 +570,46 @@
           </article>
         </section>
         <!-- SIGN UP -->
-        <section class="jumbotron border bg-light rounded-0 px-4 pb-2 pt-4 col-lg-11 col-md-6 mx-md-auto">
-          <div class="media d-flex align-items-center mb-3">
+        <section class="jumbotron border bg-light rounded-0 mt-2 px-2 pb-2 pt-4 col-lg-11 col-md-6 mx-md-auto with-100">
+          <div class="media d-flex align-items-start mb-3">
             <img class="mr-3" src="images/minilogo.png" alt="Newsweek" style="width: 50px;">
             <div class="media-body h5 text-uppercase text-dark font-weight-bold">
               Start your day with our top 5 articles
+
+              <input type="email" name="email" id="email" placeholder="Email adress" style="width: 195px";
+                class="col-sm-12 h5-border rounded-2 mb-1 py-2 mr-2">
+              <button type="button" style="width: 195px"class="btn-block text-white text-uppercase font-weight-bolder h4 bg-danger py-2 mr-2">
+                free sign up >
+              </button>
+
             </div>
           </div>
-          <input type="email" name="email" id="email" placeholder="Email adress"
-            class="col-sm-12 h5 border rounded-0 mb-2 py-2">
-          <button type="button" class="btn btn-block text-white text-uppercase font-weight-bolder h4 bg-orange py-2">
-            free sign up >
-          </button>
         </section>
       </div>
     </section>
 
     <section class="2nd-section">
+      <div class="title-inthemagazine d-flex justify-content-center">
+        <img src="./images/minilogo.png" alt="">
+        <h1 class="inmag p-0 mt-1">IN MAGAZINE</h1>
+      </div>
 
       <!-- In the Magazine image to move to next section
       
        -->
 
-      <section class="d-flex flex-column px-0 mx-0 border">
+      <section class="d-flex flex-column px-0 mx-0 border mt-4">
         <div class="row">
           <div class="col-md-3">
             <div class="position-relative d-flex in-the-mag w-100">
-              <img src="./images/inmag.png" alt="december issue" class="col-12 nov-20 p-0 w-100">
+              <img src="./images/december-issue.png" alt="december issue" class="col-12 nov-20 p-0 w-100">
               <p
-                class="category position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                class="category position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
                 DECEMBER 21 ISSUE
               </p>
             </div>
-            <button class="btn btn-text bg-light-gray font-weight-bold text-uppercase text-center h5 rounded-0 mt-2">
+            <button
+              class="btn btn-text bg-light-gray font-weight-bolder roboto text-uppercase text-center h5 rounded-0 mt-2">
               see all features >
             </button>
           </div>
@@ -590,7 +622,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold bg-danger p-1 my-1 roboto">BUSSINES</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
               </a>
             </div>
@@ -601,10 +633,10 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger roboto">PERISCOPE</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
               </a>
             </div>
@@ -618,7 +650,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
               </a>
             </div>
@@ -632,7 +664,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
               </a>
             </div>
@@ -646,7 +678,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
               </a>
             </div>
@@ -660,7 +692,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
               </a>
             </div>
@@ -674,7 +706,7 @@
                 <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
                 <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
               </div>
-              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
               </a>
             </div>
@@ -683,32 +715,23 @@
       </section>
     </section>
 
+    <div class="title-inthemagazine d-flex justify-content-center mt-4">
+      <img src="./images/minilogo.png" alt="">
+      <h1 class="inmag p-0">EDITOR'S PICK</h1>
+    </div>
     <!--EDITOR'S PEAK-->
-    <section class=" container mb-4">
+    <section class="container mb-4 mt-4">
       <!-- First editor's grid -->
       <section class="row">
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p
+              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
-            Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
-
-            <p class="description text-secondary">
-              The state's current COVID-19 hospitalizations have been rising sharply since late October.
-            </p>
-        </article>
-        <article class="col-lg-3 col-md-6 d-flex flex-column">
-          <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
-              TECH & SCIENCE
-            </p>
-          </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark font-weight-bolder my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -718,11 +741,12 @@
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p
+              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -732,11 +756,25 @@
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
+            Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
+          </a>
+          <p class="description text-secondary">
+            The state's current COVID-19 hospitalizations have been rising sharply since late October.
+          </p>
+        </article>
+        <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <div class="image position-relative d-flex">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              TECH & SCIENCE
+            </p>
+          </div>
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -746,25 +784,11 @@
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="editors" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
-            Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
-
-            <p class="description text-secondary">
-              The state's current COVID-19 hospitalizations have been rising sharply since late October.
-            </p>
-        </article>
-        <article class="col-lg-3 col-md-6 d-flex flex-column">
-          <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
-              TECH & SCIENCE
-            </p>
-          </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -774,11 +798,11 @@
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -788,11 +812,25 @@
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="" class="w-100">
-            <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
           </div>
-          <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
+            Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
+          </a>
+          <p class="description text-secondary">
+            The state's current COVID-19 hospitalizations have been rising sharply since late October.
+          </p>
+        </article>
+        <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <div class="image position-relative d-flex">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+              TECH & SCIENCE
+            </p>
+          </div>
+          <a href="#" class="sub-title h5 font-weight-bold text-dark my-2 pt-2 roboto">
             Florida COVID Cases Skyrocket Two Weeks After Thanksgiving
           </a>
           <p class="description text-secondary">
@@ -833,53 +871,39 @@
         </div>
       </section>
       <!-- Responsive grid template -->
-      <section class="U.S row">
-        <p class="text-orange font-weight-bold">U.S</p>
-        <div class="image1">
-          <img src="./images/lastsection-1.png" alt="" class="class">
-        </div>
-        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-        <div class="class">
-          <img src="./images/lastsection2.png" alt="" class="">
-          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection3.png" alt="" class="class">
-          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection4.png" alt="" class="class">
-          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection5.png" alt="" class="class">
-          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+      <section class="U.S d-flex flex-column">
+        <h2 class="text-orange font-weight-bold text-danger">U.S</h2>
+        <div class="row">
+          <div class="col-md-4 w-100">
+            <div class="class">
+              <img src="./images/lastsection-1.png" alt="" class="class">
+              <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-row w-100">
+            <div class="class">
+              <img src="./images/lastsection2.png" alt="" class="">
+              <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column w-100">
+            <div class="class">
+              <img src="./images/lastsection3.png" alt="" class="class">
+              <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection4.png" alt="" class="class">
+              <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection5.png" alt="" class="class">
+              <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Responsive grid template -->
-      <section class="U.S row">
-        <p class="text-orange font-weight-bold">U.S</p>
-        <div class="image1">
-          <img src="./images/lastsection-1.png" alt="" class="class">
-        </div>
-        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-        <div class="class">
-          <img src="./images/lastsection2.png" alt="" class="">
-          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection3.png" alt="" class="class">
-          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection4.png" alt="" class="class">
-          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-        </div>
-        <div class="class">
-          <img src="./images/lastsection5.png" alt="" class="class">
-          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-        </div>
-      </section>
+     
       <!-- Responsive grid template -->
       <section class="U.S row">
         <p class="text-orange font-weight-bold">WORDL</p>
