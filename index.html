@@ -17,9 +17,9 @@
   <title>Newsweek</title>
 </head>
 
-<body class="container p-0">
-  <header class="main container p-0">
-    <nav class="mxy-0 pxy-0">
+<body class="body">
+  <header class="w-100 d-lg-none sticky-top">
+    <nav class="">
       <!-- this code is header in mobile -->
       <div class="d-flex align-items-center justify-content-between background">
         <img class="logo" src="./images/nwlogo.png" alt="Logo">
@@ -29,543 +29,667 @@
           <i class="fas fa-bars"></i>
         </div>
       </div>
-
-      <!-- this is normal header in desktop
-  <header class="d-flex flex-column container hidden">
-    <div class="d-flex justify-content-between bg-color align-items-baseline">
-      <div class="navbar-items">
-        <a href="#" class="text-reset">18° CDMX, MX</a>
-        <p>Thu, Dec 03, 2020</p>
-      </div>
-      <div>
-        <img class="logo" src="./images/nwlogo.png" alt="Logo">
-      </div>
-      <div>
-        <span class="font-weight-bold">LOGIN</span>
-        <button type="button" class="btn btn-warning font-weight-bold rounded-pill">"SUBSCRIBE"</button>
-      </div>
-    </div>
-    <nav>
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">U.S.</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">World</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Business</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Tech & Science</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Culture</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Newsgeek</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Sports</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Health</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">The Debate</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Vantage</span></a></li>
-        <li class="nav-item"><a href="#" class="nav-link"><span class="border-right pr-3">Weather</span></a></li>
-        <li class="nav-item">Search </li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item"><a href="#" class="nav-link">TRENDING</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">JOE BIDEN</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">DONALD TRUMP</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">2020 ELECTION</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">CORONAVIRUS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">STIMULUS PACKAGE</a></li>
-      </ul>
     </nav>
   </header>
-  -->
+  <!-- this is normal header in desktop -->
+  <header class="d-flex justify-content-center">
+    <header class="d-none d-lg-flex container-xl flex-column container-xl px-0 mx-0">
+      <div class="d-flex justify-content-between bg-color align-items-end p-3 bg-danger">
+        <div class="navbar-items">
+          <a href="#" class="text-light">18° CDMX, MX</a>
+          <p class="text-light">Thu, Dec 03, 2020</p>
+        </div>
+        <div class="">
+          <!-- <img class="logo" src="./images/nwlogo.png" alt="Logo"> -->
+          <svg class="lg-logo" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
+            style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+            <g>
+              <path class="st0"
+                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div>
+          <a href=""><span class="font-weight-bold text-light roboto">LOGIN</span></a>
+          <button type="button" class="btn btn-warning font-weight-bold rounded-pill roboto">SUBSCRIBE</button>
+        </div>
+      </div>
+      <nav class="row container">
+        <ul class="nav categories tags row">
+          <li class="nav-item border-right ml-2"><a href="#" class="nav-link"><span class="roboto">U.S.</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">World</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Business</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Tech & Science</span></a>
+          </li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Culture</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Newsgeek</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Sports</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Health</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">The Debate</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Vantage</span></a></li>
+          <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Weather</span></a></li>
+          <div class="d-flex justify-content-start align-items-center lg-search-bar">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </div>
+        </ul>
+      </nav>
+      <nav class="d-flex">
+        <ul class="nav trending tags">
+          <li class="nav-item"><a href="#" class="nav-link roboto">TRENDING</a></li>
+          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">JOE BIDEN</a></li>
+          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">DONALD TRUMP</a></li>
+          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">2020 ELECTION</a></li>
+          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">CORONAVIRUS</a></li>
+          <li class="nav-item"><a href="#" class="nav-link roboto text-secondary">STIMULUS PACKAGE</a></li>
+        </ul>
+      </nav>
 
-    </nav>
+    </header>
   </header>
-  <main class="main">
-    <!-- Featured Stories -->
-    <section class="row main-section">
-      <div class="d-flex flex-column">
-        <h4 class="h4 font-weight-bolder mt-1 mb-2 text-secondary">FEATURED STORIES</h4>
+  <main class="main container">
+    <section class="top-section row">
 
-        <article class="card-group">
-          <div class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/coronavirus-us.jpg" class="card-img-top" alt="first img" width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">U.S</a>
+      <div class="col-md-5 col-lg-4">
+        <!-- Featured Stories -->
+        <section class=" main-section">
+          <div class="d-flex flex-column">
+            <h4 class="h4 font-weight-bolder mt-1 mb-2 text-secondary">FEATURED STORIES</h4>
+            <article class="card-group">
+              <div class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/coronavirus-us.jpg" class="card-img-top" alt="first img" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">U.S</a>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title h3"><a>U.S. Had More COVID Deaths in 1 Day Than 36 Countries' Total Deaths</a>
+                  </h3>
+                  <p class="card-text">To data from Johns Hopkins University, there were more than 2,800 new deaths
+                    reported
+                    in
+                    the U.S., which marked its largest single-day increase—topping a previous high set on April 15, when
+                    more than 2,
+                    600 deaths were reported.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-group">
+              <div class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/warnock-ossoff-georgia.jpg" class="card-img-top" alt="second-img" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><a>Georgia Senate Democratic Candidates Hold Small Lead a Month Before
+                      Runoffs</a>
+                  </h3>
+                  <p class="card-text">Jon Ossoff and Reverend Raphael Warnock hold a tight lead in the polls as
+                    President
+                    Donald Trump,
+                    Vice President Mike Pence, former President Barack Obama and former gubernatorial candidate Stacey
+                    Abrams all head
+                    into a weekend of campaigning before Georgia's voter registration deadline closes.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-group">
+              <div class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/trump-mcconnell.jpg" class="card-img-top" alt="third img" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">POLITICS</a>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><a>Trump Supports McConnell's Stimulus, Despite 'Go Big' Call Before
+                      Election</a>
+                  </h3>
+                  <p class="card-text">to data from Johns Hopkins University, there were more than 2,800 new deaths
+                    reported
+                    in the
+                    U.S., which marked its largest single-day increase—topping a previous high set on April 15, when
+                    more
+                    than 2,600
+                    deaths were reported.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-group">
+              <div class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/vaccines.we.jpg" class="card-img-top" alt="forth img" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">OPINION</a>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title"><a>We Already Paid for the COVID Vaccine, With Our Taxes. Set it Free.</h3></a>
+                  <p class="card-text">Vaccines will have zero effectiveness for those who won't have access them or
+                    won't
+                    be able to
+                    afford them—which is bad enough. But this will also endanger the rest of us. We need a People's
+                    Vaccine.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-group">
+              <div class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top"
+                    alt="first img" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Eric Garcetti's L.A. Stay-At-Home Order Blasted By Californians</a></h3>
+                  <p class="card-text">
+                    <p>The mayor's latest lockdown order came as the total confirmed cases in Los Angeles surpassed
+                      414,500.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-7 col-lg-4">
+        <!-- Top Story -->
+        <section class="col 2 container sec-2">
+          <article class="small-cards">
+
+            <h4 class="text-secondary font-weight-bolder mb-3 mt-4 h4 border-bottom border-4">TOP STORY</h4>
+
+            <div class="card-group">
+              <article class="card">
+                <div class="image position relative d-flex">
+                  <img src="./images/sec2-img1.jpg" alt="" class="card-img-top" width="350px">
+                  <a href="category"
+                    class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-1 py-1 img-link">TOP
+                    STORY</a>
+                </div>
+
+                <div class="card-body">
+                  <h3 class="card-title h3"><a href="#" class="card-links text-dark">Without Another Stimulus, Economy
+                      Headed for
+                      Recession Early Next Year</a></h3>
+                  <p class="card-text">Economists have urged lawmakers to act and pass another round of stimulus for
+                    months
+                    amid partisan gridlock.</p>
+                </div>
+              </article>
             </div>
-            <div class="card-body">
-              <h3 class="card-title h3"><a>U.S. Had More COVID Deaths in 1 Day Than 36 Countries' Total Deaths</a></h3>
-              <p class="card-text">To data from Johns Hopkins University, there were more than 2,800 new deaths reported
-                in
-                the U.S., which marked its largest single-day increase—topping a previous high set on April 15, when
-                more than 2,
-                600 deaths were reported.</p>
+          </article>
+
+        </section>
+        <!-- My turn -->
+        <section class="d-flex flex-column container">
+          <h4 class="text-secondary font-weight-bolder mb-3 mt-2 h4 border-bottom border-4">MY TURN</h4>
+          <div class="d-md-flex">
+            <div class="myturn-item col">
+              <div class="img-turn">
+                <img src="./images/sec2-img2.png" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'My Baby Had a Medical Emergency During COVID'</p>
+              </div>
+            </div>
+            <div class="myturn-item col">
+              <div class="img-turn">
+                <img src="./images/sec2-img3.png" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'I Got COVID 9 Months Ago and Still Have Symptoms'</p>
+              </div>
+            </div>
+            <div class="myturn-item col">
+              <div class="img-turn">
+                <img src="./images/sec2-img4.jpg" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'I'm an FBI Trained Former Hostage Negotiator'</p>
+              </div>
             </div>
           </div>
-        </article>
+        </section>
+        <!-- Culture & Travel -->
+        <section class="d-flex flex-column container">
+          <h4 class="text-secondary font-weight-bolder mb-3 mt-2 h4 border-bottom border-4">CULTURE & TRAVEL</h4>
+          <div class="d-md-flex">
 
-        <article class="card-group">
-          <div class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/warnock-ossoff-georgia.jpg" class="card-img-top" alt="second-img" width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
+            <div class=" myturn-item m-2">
+              <div class="img-turn">
+                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'My Baby Had a Medical Emergency During COVID'</p>
+              </div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title"><a>Georgia Senate Democratic Candidates Hold Small Lead a Month Before Runoffs</a>
-              </h3>
-              <p class="card-text">Jon Ossoff and Reverend Raphael Warnock hold a tight lead in the polls as President
-                Donald Trump,
-                Vice President Mike Pence, former President Barack Obama and former gubernatorial candidate Stacey
-                Abrams all head
-                into a weekend of campaigning before Georgia's voter registration deadline closes.</p>
+            <div class="myturn-item m-2">
+              <div class="img-turn">
+                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'I Got COVID 9 Months Ago and Still Have Symptoms'</p>
+              </div>
+            </div>
+            <div class="myturn-item m-2">
+              <div class="img-turn">
+                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+              </div>
+              <div class="title-myturn">
+                <p class="title-myturn">'I'm an FBI Trained Former Hostage Negotiator'</p>
+              </div>
             </div>
           </div>
-        </article>
+        </section>
+        <!-- More stories -->
+        <section>
+          <div class="d-flex flex-column container">
+            <h4 class="text-secondary font-weight-bolder mb-2 mt-2 h4 border-bottom border-4">MORE STORIES</h4>
 
-        <article class="card-group">
-          <div class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/trump-mcconnell.jpg" class="card-img-top" alt="third img" width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">POLITICS</a>
+            <div class="media mb-2 border-bottom-3">
+              <img src="./images/sec2-img8.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title"><a>Trump Supports McConnell's Stimulus, Despite 'Go Big' Call Before Election</a>
-              </h3>
-              <p class="card-text">to data from Johns Hopkins University, there were more than 2,800 new deaths reported
-                in the
-                U.S., which marked its largest single-day increase—topping a previous high set on April 15, when more
-                than 2,600
-                deaths were reported.</p>
+            <div class="media mb-2 border-bottom-3">
+              <img src="./images/sec2-img9.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 border-bottom-3">
+              <img src="./images/sec2-img10.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-3">
+              <img src="./images/sec2-img11.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img12.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img13.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img14.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href=" #" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img15.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img16.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img17.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
+            </div>
+            <div class="media mb-2 mt-2 border-bottom-2">
+              <img src="./images/sec2-img18.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
+                <a href="#" class="text-weight bolder title-morestories">
+                  <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+                  </h5>
+                </a>
+                <p class="align-self-start description-morestories">The president's legal losses are mounting, with a
+                  handful
+                  of recent
+                  significant defeats on issues as diverse as TikTok and sexual assault charges.</p>
+              </div>
             </div>
           </div>
-        </article>
+        </section>
+      </div>
+      <div class="col-12 col-lg-4">
+        <!-- The Debate -->
+        <section class="container">
+          <article class="d-flex flex-column">
 
-        <article class="card-group">
-          <div class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/vaccines.we.jpg" class="card-img-top" alt="forth img" width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">OPINION</a>
+            <h4 class="font-weight-bolder title-debate">THE DEBATE</h4>
+
+            <div class="d-flex align-content-center border-bottom">
+              <img src="./images/card1.png" class="" alt="debate-img" height="70px">
+              <div class="p-3">
+                <a href="#" class="font-weight-bolder title2-debate">
+                  <h6>"Should Trump Concede? Yes"</h6>
+                </a>
+                <p>BY<a href="#" class="font-weight-bold author-debate"> JONATHAN TOBIN</a></p>
+              </div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title"><a>We Already Paid for the COVID Vaccine, With Our Taxes. Set it Free.</h3></a>
-              <p class="card-text">Vaccines will have zero effectiveness for those who won't have access them or won't
-                be able to
-                afford them—which is bad enough. But this will also endanger the rest of us. We need a People's Vaccine.
-              </p>
+
+            <span class="align-self-center text-center text-white rounded-circle bg-dark span-width">VS</span>
+
+            <div class="d-flex flex-row-reverse justify-content-between border-top">
+              <img src="./images/card2.png" class="d-flex border-bottom-4" alt="" height="70px">
+              <div class="p-3">
+                <a href="#" class="font-weight-bolder title2-debate">
+                  <h6>Should Trump Concede? Not Yet</h6>
+                </a>
+                <p>BY<a href="#" class="font-weight-bold author-debate">SPENCER KLAVAN</a></p>
+              </div>
+            </div>
+
+          </article>
+        </section>
+        <!-- Opinion -->
+        <section class="TO-REVIEW">
+          <article>
+            <h4 class="font-weight-bolder opinion-title">OPINION</h4>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-2 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">Cambridge Should Preserve the Freedom to
+                    Disrespect</a>
+                  <p class="mt-2 opinion-author">BY ARIF AHMED AND ROSS ANDERSON</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">The Electoral College Nightmare That Could Have
+                    Happened</a>
+                  <p class="mt-2 opinion-author">BY TOM ROGERS</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">There's No Stopping America's Political
+                    Realignment</a>
+                  <p class="mt-2 opinion-author">BY JOSH HAMMER</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">The Time Is Now for Saudi Arabia To Normalize
+                    Relations
+                    With Israel</a>
+                  <p>BY RICHARD GOLDBERG</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">A British Court Breaks Gender Fever</a>
+                  <p class="mt-2 opinion-author">BY ABIGAIL SHRIER</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title">San Francisco Jon Ossoff</a>
+                  <p class="mt-2 opinion-author">BY NEWT GINGRICH</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column multiple-cards">
+              <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <div class="pt-2 multiple-card-title">
+                  <a href="#" class="font-weight-bold card-title"> Don't Lower the Medicare Eligibility Age</a>
+                  <p class="mt-2 opinion-author">BY SALLY C. PIPES</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- SIGN UP -->
+        <section class="jumbotron border bg-light rounded-0 px-4 pb-2 pt-4 col-lg-11 col-md-6 mx-md-auto">
+          <div class="media d-flex align-items-center mb-3">
+            <img class="mr-3" src="images/minilogo.png" alt="Newsweek" style="width: 50px;">
+            <div class="media-body h5 text-uppercase text-dark font-weight-bold">
+              Start your day with our top 5 articles
             </div>
           </div>
-        </article>
-
-        <article class="card-group">
-          <div class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top" alt="first img"
-                width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Eric Garcetti's L.A. Stay-At-Home Order Blasted By Californians</a></h3>
-              <p class="card-text">
-                <p>The mayor's latest lockdown order came as the total confirmed cases in Los Angeles surpassed
-                  414,500.</p>
-            </div>
-          </div>
-        </article>
+          <input type="email" name="email" id="email" placeholder="Email adress"
+            class="col-sm-12 h5 border rounded-0 mb-2 py-2">
+          <button type="button" class="btn btn-block text-white text-uppercase font-weight-bolder h4 bg-orange py-2">
+            free sign up >
+          </button>
+        </section>
       </div>
     </section>
-    <!-- The Debate -->
-    <section class="container">
-      <article class="d-flex flex-column">
 
-        <h4 class="font-weight-bolder title-debate">THE DEBATE</h4>
+    <section class="2nd-section">
 
-        <div class="d-flex align-content-center border-bottom">
-          <img src="./images/card1.png" class="" alt="debate-img" height="70px">
-          <div class="p-3">
-            <a href="#" class="font-weight-bolder title2-debate">
-              <h6>"Should Trump Concede? Yes"</h6>
-            </a>
-            <p>BY<a href="#" class="font-weight-bold author-debate"> JONATHAN TOBIN</a></p>
-          </div>
-        </div>
+      <!-- In the Magazine image to move to next section
+      
+       -->
 
-        <span class="align-self-center text-center text-white rounded-circle bg-dark span-width">VS</span>
-
-        <div class="d-flex flex-row-reverse justify-content-between border-top">
-          <img src="./images/card2.png" class="d-flex border-bottom-4" alt="" height="70px">
-          <div class="p-3">
-            <a href="#" class="font-weight-bolder title2-debate">
-              <h6>Should Trump Concede? Not Yet</h6>
-            </a>
-            <p>BY<a href="#" class="font-weight-bold author-debate">SPENCER KLAVAN</a></p>
-          </div>
-        </div>
-
-      </article>
-    </section>
-    <!-- Opinion -->
-    <section class="TO-REVIEW">
-      <article>
-        <h4 class="font-weight-bolder opinion-title">OPINION</h4>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-2 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card2.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple card-title">
-              <a href="#" class="font-weight-bold card-title">Cambridge Should Preserve the Freedom to Disrespect</a>
-              <p class="mt-2 opinion-author">BY ARIF AHMED AND ROSS ANDERSON</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card1.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple card-titles">
-              <a href="#" class="font-weight-bold card-title">The Electoral College Nightmare That Could Have
-                Happened</a>
-              <p class="mt-2 opinion-author">BY TOM ROGERS</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card2.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple-card-title">
-              <a href="#" class="font-weight-bold card-title">There's No Stopping America's Political Realignment</a>
-              <p class="mt-2 opinion-author">BY JOSH HAMMER</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card1.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple card-title">
-              <a href="#" class="font-weight-bold card-title">The Time Is Now for Saudi Arabia To Normalize Relations
-                With Israel</a>
-              <p>BY RICHARD GOLDBERG</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card2.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple-card-title">
-              <a href="#" class="font-weight-bold card-title">A British Court Breaks Gender Fever</a>
-              <p class="mt-2 opinion-author">BY ABIGAIL SHRIER</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card1.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple card-title">
-              <a href="#" class="font-weight-bold card-title">San Francisco Jon Ossoff</a>
-              <p class="mt-2 opinion-author">BY NEWT GINGRICH</p>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-column multiple-cards">
-          <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-            <img src="./images/card2.png" class="align-content-start mr-3" alt="">
-            <div class="pt-2 mt-4 multiple card-title">
-              <a href="#" class="font-weight-bold card-title"> Don't Lower the Medicare Eligibility Age</a>
-              <p class="mt-2 opinion-author">BY SALLY C. PIPES</p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="col 2 container sec-2">
-      <article class="small-cards">
-
-        <h4 class="text-secondary font-weight-bolder mb-3 mt-4 h4 border-bottom border-4">TOP STORY</h4>
-
-        <div class="card-group">
-          <article class="card">
-            <div class="image position relative d-flex">
-              <img src="./images/sec2-img1.jpg" alt="" class="card-img-top" width="350px">
-              <a href="category"
-                class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-1 py-1 img-link">TOP
-                STORY</a>
-            </div>
-
-            <div class="card-body">
-              <h3 class="card-title h3"><a href="#" class="card-links text-dark">Without Another Stimulus, Economy Headed for
-                  Recession Early Next Year</a></h3>
-              <p class="card-text">Economists have urged lawmakers to act and pass another round of stimulus for months
-                amid partisan gridlock.</p>
-            </div>
-        </div>
-
-        <div class="d-flex flex-column container">
-          <h4 class="text-secondary font-weight-bolder mb-3 mt-4 h4 border-bottom border-4">MORE STORIES</h4>
-
-          <article class="d-flex border-bottom border-4">
-            <img src="./images/sec2-img8.jpg" alt="" width="100px" height="100px">
-            <div class="d-flex flex-column align-content-end order-2 text-morestories">
-              <a href="#" class="text-weight bolder title-morestories">
-                <h5>Republican, Dem Judges Have Turned on Trump—and Not Just On the Election</h5>
-              </a>
-              <p class="description-morestories">The president's legal losses are mounting, with a handful of recent
-                significant defeats on issues
-                as diverse as TikTok and sexual assault charges, in addition to his dismal record on election-related
-                lawsuits.
-                And the rulings have come from judges across the political spectrum.</p>
-            </div>
-          </article>
-          <article class="border-bottom border-4">
-            <img src="./images/sec2-img9.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Ivanka Trump Offers to Take COVID Vaccine to Reassure Americans</h5>
-            </a>
-            <p>Former Presidents Barack Obama, George W. Bush and Bill Clinton recently said they will take a COVID-19
-              vaccine
-              publicly once one is approved by the FDA.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img10.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>John Bolton Praises Barr for Pouring Cold Water on Mass Voter Fraud Claims</h5>
-            </a>
-            <p>The former national security adviser said the attorney general had done "the right thing" in telling the
-              truth.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img11.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>California Willow Fire Map, Update as Inferno Rips Through Rancho San Diego</h5>
-            </a>
-            <p>A Red Flag Warning is in place for parts of Southern California due to gusty winds and low humidity from
-              Wednesday
-              evening through Saturday evening.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img12.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Unknown COVID Vaccine Side Effects May Appear After Millions Immunized</h5>
-            </a>
-            <p>Experts told Newsweek the potential harms caused by catching COVID are far worse than those associated
-              with
-              getting a shot.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img13.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Bernie Sanders Calls for 'Unprecedented' Response to COVID Crisis</h5>
-            </a>
-            <p>The Vermont senator also called on the president-elect to adopt a laundry list of progressive policies in
-              his first 100 days.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img14.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Registered Republican Behind Hoax Antifa 'Protesters Needed' Craigslist Ad</h5>
-            </a>
-            <p>The false advert calling for people to cause "as much chaos and destruction as possible" in Nebraska went
-              viral
-              earlier this year.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img15.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Mass MAGA Rally Planned for D.C. Days Before Electoral College Casts Votes</h5>
-            </a>
-            <p>The march will mark the end of a two-week March for Trump bus tour from Florida to the U.S. capital.,
-              organized by
-              Women for America First.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img16.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Tlaib Leads Progressive Charge for Stimulus Checks After Pelosi Compromise</h5>
-            </a>
-            <p>A new stimulus proposal was outlined which did not include another round of direct payments, despite
-              previous
-              bipartisan support for such action.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img17.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>U.S., Awaiting Response to Scientist Killing, Withdraws Baghdad Staff</h5>
-            </a>
-            <p>Iran has blamed Israel for last week's killing of its top nuclear scientist, and vowed revenge against
-              those responsible.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img18.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>Ghislaine Maxwell to Seek Bail in Private Hearing in Jeffrey Epstein Case</h5>
-            </a>
-            <p>Ghislaine Maxwell's lawyers want victims to be excluded from a new bail hearing despite previous warnings
-              she is an
-              "extreme" flight risk, prosecutors say.</p>
-          </article>
-          <article class="">
-            <img src="./images/sec2-img19.jpg" alt="" width="100px" height="100px">
-            <a href="#" class="title-morestories">
-              <h5>China Blasts Trump's 'Political Repression' Over U.S. Visa Restrictions</h5>
-            </a>
-            <p>China's foreign ministry on Thursday said it had voiced its dissatisfaction with the U.S. over the Trump
-              administration's
-              new visa restrictions targeting over 90 million Communist Party members.</p>
-          </article>
-        </div>
-      </article>
-    </section>
-
-    <section class="d-flex flex-column container">
-      <h4 class="text-secondary font-weight-bolder mb-3 mt-2 h4 border-bottom border-4">MY TURN</h4>
-
-      <div class=" myturn-item">
-        <div class="img-turn">
-          <img src="./images/sec2-img2.png" alt="" width="150px">
-        </div>
-        <div class="title-myturn">
-          <p class="title-myturn">'My Baby Had a Medical Emergency During COVID'</p>
-        </div>
-      </div>
-      <div class="myturn-item">
-        <div class="img-turn">
-          <img src="./images/sec2-img3.png" alt="" width="150px">
-        </div>
-        <div class="title-myturn">
-          <p class="title-myturn">'I Got COVID 9 Months Ago and Still Have Symptoms'</p>
-        </div>
-      </div>
-      <div class="myturn-item">
-        <div class="img-turn">
-          <img src="./images/sec2-img4.jpg" alt="" width="150px">
-        </div>
-        <div class="title-myturn">
-          <p class="title-myturn">'I'm an FBI Trained Former Hostage Negotiator'</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SIGN UP -->
-    <section class="jumbotron border bg-light rounded-0 px-4 pb-2 pt-4 m-3 col-lg-11 col-md-6 mx-md-auto">
-      <div class="media d-flex align-items-center mb-3">
-        <img class="mr-3" src="images/minilogo.png" alt="Newsweek" style="width: 50px;">
-        <div class="media-body h5 text-uppercase text-dark font-weight-bold">
-          Start your day with our top 5 articles
-        </div>
-      </div>
-      <input type="email" name="email" id="email" placeholder="Email adress"
-        class="col-sm-12 h5 border rounded-0 mb-2 py-2">
-      <button type="button" class="btn btn-block text-white text-uppercase font-weight-bolder h4 bg-orange py-2">
-        free sign up >
-      </button>
-    </section>
-
-    <section class="row pre-footer">
-      <div class="container">
-        <div class="row d-flex flex-column flex-md-row">
-          <div class="col-md-3 p-3">
-            <div class="position-relative d-flex in-the-mag">
-              <img src="./images/inmag.png" alt="december issue" class="col-12 nov-20 p-0">
+      <section class="d-flex flex-column px-0 mx-0 border">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="position-relative d-flex in-the-mag w-100">
+              <img src="./images/inmag.png" alt="december issue" class="col-12 nov-20 p-0 w-100">
               <p
                 class="category position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
                 DECEMBER 21 ISSUE
               </p>
             </div>
-            <button
-              class="btn col-12 btn-text bg-light-gray font-weight-bold text-uppercase text-center h5 rounded-0 mt-2">see
-              all features ></button>
+            <button class="btn btn-text bg-light-gray font-weight-bold text-uppercase text-center h5 rounded-0 mt-2">
+              see all features >
+            </button>
           </div>
-          <section class="d-flex flex-md-row col-md-9 px-0 mx-0 mt-5">
-            <div class="row">
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="images/inmag2.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">HEALTH</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decoration-orange">
-                    Woman, 73, Who Should've Gotten Alzheimer's, Didn't—Renewing Hope for Cure
-                  </a>
-                </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag1.png" alt="inmag-img">
+            </a>
+            <div class="mt-2">
+              <div class="d-flex">
+                <p class="bg-orange text-light h5 font-weight-bold bg-danger p-1 my-1 roboto">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
               </div>
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="./images/inmag1.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">BUSSINES</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
-                    Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="./images/inmag3.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">PERISCOPE</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">CULTURE</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
-                    The 10 Best Moves to Make with Your Money Before 2020 Ends
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="./images/inmag1.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">BUSSINES</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
-                    Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="./images/inmag2.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">PERISCOPE</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">CULTURE</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
-                    The 10 Best Moves to Make with Your Money Before 2020 Ends
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
-                <a href="#">
-                  <img class="col-12" src="./images/inmag3.png" alt="inmag-img">
-                </a>
-                <div class="col-12 mt-2">
-                  <div class="d-flex flex-row">
-                    <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">BUSSINES</p>
-                    <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
-                  </div>
-                  <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
-                    Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
-                  </a>
-                </div>
-              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+              </a>
             </div>
-          </section>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag3.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                The 10 Best Moves to Make with Your Money Before 2020 Ends
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag1.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag2.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                The 10 Best Moves to Make with Your Money Before 2020 Ends
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag3.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag2.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                The 10 Best Moves to Make with Your Money Before 2020 Ends
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column in-the-mag py-3 px-1">
+            <a href="#">
+              <img class="col-12" src="./images/inmag3.png" alt="inmag-img">
+            </a>
+            <div class="col-12 mt-2">
+              <div class="d-flex flex-">
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+              </div>
+              <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!--EDITOR'S PEAK-->
-    <section class="row container mb-4">
-      <div class="row">
+    <section class=" container mb-4">
+      <!-- First editor's grid -->
+      <section class="row">
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -579,7 +703,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -593,7 +717,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -607,7 +731,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -621,7 +745,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="editors">
+            <img src="./images/EDITORSPICK.png" alt="editors" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -635,7 +759,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -649,7 +773,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -663,7 +787,7 @@
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="">
+            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
             <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -675,150 +799,159 @@
             The state's current COVID-19 hospitalizations have been rising sharply since late October.
           </p>
         </article>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">U.S</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S d-flex flex-column">
+        <h2 class="text-orange font-weight-bold text-danger">U.S</h2>
+        <div class="row">
+          <div class="col-md-4 w-100">
+            <div class="class">
+              <img src="./images/lastsection-1.png" alt="" class="class">
+              <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+            </div>
           </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+          <div class="col-md-4 d-flex flex-row w-100">
+            <div class="class">
+              <img src="./images/lastsection2.png" alt="" class="">
+              <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+            </div>
           </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+          <div class="col-md-4 d-flex flex-column w-100">
+            <div class="class">
+              <img src="./images/lastsection3.png" alt="" class="class">
+              <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection4.png" alt="" class="class">
+              <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection5.png" alt="" class="class">
+              <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+            </div>
           </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">U.S</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
-          </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">U.S</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
-          </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">WORDL</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
-          </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">SPORTS</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
-          </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
-
-        <section class="U.S">
-          <p class="text-orange font-weight-bold">CULTURE</p>
-          <div class="image1">
-            <img src="./images/lastsection-1.png" alt="" class="class">
-          </div>
-          <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
-          <div class="class">
-            <img src="./images/lastsection2.png" alt="" class="">
-            <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection3.png" alt="" class="class">
-            <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection4.png" alt="" class="class">
-            <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
-          </div>
-          <div class="class">
-            <img src="./images/lastsection5.png" alt="" class="class">
-            <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
-          </div>
-        </section>
+        </div>
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S row">
+        <p class="text-orange font-weight-bold">U.S</p>
+        <div class="image1">
+          <img src="./images/lastsection-1.png" alt="" class="class">
+        </div>
+        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+        <div class="class">
+          <img src="./images/lastsection2.png" alt="" class="">
+          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection3.png" alt="" class="class">
+          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection4.png" alt="" class="class">
+          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection5.png" alt="" class="class">
+          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+        </div>
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S row">
+        <p class="text-orange font-weight-bold">U.S</p>
+        <div class="image1">
+          <img src="./images/lastsection-1.png" alt="" class="class">
+        </div>
+        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+        <div class="class">
+          <img src="./images/lastsection2.png" alt="" class="">
+          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection3.png" alt="" class="class">
+          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection4.png" alt="" class="class">
+          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection5.png" alt="" class="class">
+          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+        </div>
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S row">
+        <p class="text-orange font-weight-bold">WORDL</p>
+        <div class="image1">
+          <img src="./images/lastsection-1.png" alt="" class="class">
+        </div>
+        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+        <div class="class">
+          <img src="./images/lastsection2.png" alt="" class="">
+          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection3.png" alt="" class="class">
+          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection4.png" alt="" class="class">
+          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection5.png" alt="" class="class">
+          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+        </div>
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S row">
+        <p class="text-orange font-weight-bold">SPORTS</p>
+        <div class="image1">
+          <img src="./images/lastsection-1.png" alt="" class="class">
+        </div>
+        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+        <div class="class">
+          <img src="./images/lastsection2.png" alt="" class="">
+          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection3.png" alt="" class="class">
+          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection4.png" alt="" class="class">
+          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection5.png" alt="" class="class">
+          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+        </div>
+      </section>
+      <!-- Responsive grid template -->
+      <section class="U.S row">
+        <p class="text-orange font-weight-bold">CULTURE</p>
+        <div class="image1">
+          <img src="./images/lastsection-1.png" alt="" class="class">
+        </div>
+        <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+        <div class="class">
+          <img src="./images/lastsection2.png" alt="" class="">
+          <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection3.png" alt="" class="class">
+          <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection4.png" alt="" class="class">
+          <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+        </div>
+        <div class="class">
+          <img src="./images/lastsection5.png" alt="" class="class">
+          <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+        </div>
+      </section>
     </section>
 
     <!-- Subscribe -->
