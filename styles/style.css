@@ -15,10 +15,10 @@
 
 .navbar-items {
   font-size: 15px;
-  font-family: '"Roboto Condensed"', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-/* mobile stups*/
+/* mobile stups */
 .logo {
   max-width: 350px;
   max-height: 80px;
@@ -29,14 +29,14 @@
 .first-button {
   width: 92px;
   font-size: 12px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   padding: 0 12px;
   background-color: #ffe400;
   letter-spacing: 1px;
 }
 
 .h4 {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   color: #03030366;
   font-size: 16px;
 }
@@ -53,7 +53,7 @@
 }
 
 .title-debate {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   color: #03030366;
   font-size: 16px;
   border-bottom: 4px solid #4e4d4d66;
@@ -64,12 +64,12 @@
   color: black;
   font-weight: bold;
   font-size: 17px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .author-debate {
-  font-family: "Roboto Condensed";
-  color: #555555;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #555;
   font-size: 14px;
 }
 
@@ -85,14 +85,14 @@
 }
 
 .opinion-title {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   color: #03030366;
   font-size: 16px;
   padding: 11px 0;
 }
 
 .multiple-card-title {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
   font-size: 16px;
   color: black;
@@ -100,20 +100,20 @@
 }
 
 .opinion-author {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
-  font-weight: #555555;
+  color: #555;
 }
 
 .title-morestories {
-  font-family: "Roboto Condensed";
-  font-weight: bolder;
   font-size: 17px;
   color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
 }
 
 .title-myturn p {
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #03030380;
@@ -124,11 +124,6 @@
   font-size: 13px;
 }
 
-.title-morestories {
-  font-family: "Roboto Condensed";
-  font-size: 16px;
-  font-weight: bold;
-}
 /*
   .background button {
     font-size: 15px;
@@ -139,7 +134,6 @@
   visibility: hidden;
 }
 
-.sec-1 img,
 .sec-1 img {
   width: 100%;
 }
@@ -152,17 +146,12 @@
   color: red !important;
 }
 
-@media (min-width: 768px) {}
-
-
-
+/* @media (min-width: 768px) {} */
 
 @media (min-width: 992px) {
-
   .no-element {
     max-width: 650px;
     max-height: 90px;
-
   }
 
   .lg-logo {
@@ -172,10 +161,10 @@
   .lg-search-bar {
     width: 75px;
   }
-  .lg-search-bar > input{
+
+  .lg-search-bar > input {
     width: 65px;
     border: none;
     margin-left: 5px;
   }
-
 }
