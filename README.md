@@ -4,9 +4,9 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](./assets/screenshot.png)
+![screenshot](./images/screenshot.png)
 
-Additional description about the project and its features.
+It is a nicely done layout for Newsweek Clone using flexbox, bootstrap and a nice touch of position sticky!
 
 ## Built With
 
@@ -19,7 +19,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](pending)
+[Live Demo Link](https://rawcdn.githack.com/angelacuahutle/Newsweek-Clone/e27c791dbd6b028b6caf9457a75cfefb70f999bc/index.html)
 
 ## Authors
 
