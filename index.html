@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/style-reset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=RobotoCondensed' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/add939e8fb.js" crossorigin="anonymous"></script>
 
 
@@ -27,20 +26,20 @@
         <img class="logo" src="./images/nwlogo.png" alt="Logo">
         <div class="mr-3 d-flex align-items-center">
           <i class="fas fa-user mr-2"></i>
-          <button type="button" class="btn font-weight-bold rounded-pill mr-2 first-button" name="">SUBSCRIBE></button>
+          <button type="button" class="btn font-weight-bold rounded-pill mr-2 pb-2 first-button" name="subscribe">SUBSCRIBE></button>
           <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
 
     <!-- this code is header in MID and LARGE -->
-    <div class=" justify-content-between bg-color align-items-end p-3 bg-danger d-none  d-lg-flex">
+    <div class=" justify-content-between bg-color align-items-end p-3 bg-danger d-none d-lg-flex">
       <div class="navbar-items">
         <a href="#" class="text-light">18° CDMX, MX</a>
         <p class="text-light">Thu, Dec 03, 2020</p>
       </div>
       <div class="">
-        <svg class="lg-logo" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+        <svg class="lg-logo width-350px" version="1.1" height="60" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
           style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
           <g>
@@ -52,7 +51,7 @@
       </div>
       <div>
         <a href=""><span class="font-weight-bold text-light roboto">LOGIN</span></a>
-        <button type="button" class="btn btn-warning font-weight-bold rounded-pill roboto">SUBSCRIBE</button>
+        <button type="button" class="btn font-weight-bold rounded-pill first-button pb-2" name="subscribe">SUBSCRIBE></button>
       </div>
     </div>
     <nav class="row container top-nav d-none d-lg-flex">
@@ -69,10 +68,9 @@
         <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">The Debate</span></a></li>
         <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Vantage</span></a></li>
         <li class="nav-item border-right"><a href="#" class="nav-link"><span class="roboto">Weather</span></a></li>
-        <div class="d-flex justify-content-start align-items-center lg-search-bar">
+        <li class="d-flex justify-content-start align-items-center lg-search-bar">
           <input type="text" placeholder="Search">
           <i class="fas fa-search" aria-hidden="true"></i>
-        </div>
       </ul>
     </nav>
     <nav class="d-none d-lg-flex second-nav">
@@ -88,10 +86,11 @@
   </header>
   <main class="main container">
     <section class="top-section row">
-
+      <h2 class="d-none">Heading</h2>
       <div class="col-md-5 col-lg-4 col-one">
         <!-- Featured Stories -->
         <section class="col 2 container sec-2 d-flex d-md-none">
+          <h2 class="d-none">Heading</h2>
           <article class="small-cards">
 
             <h4 class="text-secondary font-weight-bolder h4  mb-2 border-bottom ">TOP STORY</h4>
@@ -99,7 +98,7 @@
             <div class="card-group">
               <article class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/sec2-img1.jpg" alt="" class="card-img-top" width="350px">
+                  <img src="./images/sec2-img1.jpg" alt="stories" class="card-img-top width-350px">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-1 py-1 img-link">TOP
                     STORY</a>
@@ -124,7 +123,7 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/coronavirus-us.jpg" class="card-img-top" alt="first img" width="350px">
+                  <img src="./images/coronavirus-us.jpg" class="card-img-top width-350px" alt="first img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">U.S</a>
                 </div>
@@ -144,7 +143,7 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/warnock-ossoff-georgia.jpg" class="card-img-top" alt="second-img" width="350px">
+                  <img src="./images/warnock-ossoff-georgia.jpg" class="card-img-top width-350px" alt="second-img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
                 </div>
@@ -165,7 +164,7 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/trump-mcconnell.jpg" class="card-img-top" alt="third img" width="350px">
+                  <img src="./images/trump-mcconnell.jpg" class="card-img-top width-350px" alt="third img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">POLITICS</a>
                 </div>
@@ -187,12 +186,12 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/vaccines.we.jpg" class="card-img-top" alt="forth img" width="350px">
+                  <img src="./images/vaccines.we.jpg" class="card-img-top width-350px" alt="forth img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">OPINION</a>
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title"><a>We Already Paid for the COVID Vaccine, With Our Taxes. Set it Free.</h3></a>
+                  <h3 class="card-title"><a>We Already Paid for the COVID Vaccine, With Our Taxes. Set it Free.</a></h3>
                   <p class="card-text">Vaccines will have zero effectiveness for those who won't have access them or
                     won't
                     be able to
@@ -206,15 +205,13 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top"
-                    alt="first img" width="350px">
+                  <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top width-350px" alt="first img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title">Eric Garcetti's L.A. Stay-At-Home Order Blasted By Californians</a></h3>
-                  <p class="card-text">
-                    <p>The mayor's latest lockdown order came as the total confirmed cases in Los Angeles surpassed
+                  <h3 class="card-title"><a href="">Eric Garcetti's L.A. Stay-At-Home Order Blasted By Californians</a></h3>
+                  <p class="card-text">The mayor's latest lockdown order came as the total confirmed cases in Los Angeles surpassed
                       414,500.</p>
                 </div>
               </div>
@@ -225,6 +222,7 @@
       <div class="col-md-7 col-lg-4 col-two">
         <!-- Top Story -->
         <section class="col 2 container sec-2 ">
+          <h2 class="d-none">Heading</h2>
           <article class="small-cards  d-none d-md-flex flex-md-column">
 
             <h4 class="text-secondary font-weight-bolder h4  mb-2 border-bottom ">TOP STORY</h4>
@@ -232,7 +230,7 @@
             <div class="card-group">
               <article class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/sec2-img1.jpg" alt="" class="card-img-top" width="350px">
+                  <img src="./images/sec2-img1.jpg" alt="stories" class="card-img-top width-350px">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-1 py-1 img-link">TOP
                     STORY</a>
@@ -257,7 +255,7 @@
           <div class="d-md-flex">
             <div class="myturn-item col">
               <div class="img-turn">
-                <img src="./images/sec2-img2.png" alt="" width="100%">
+                <img src="./images/sec2-img2.png" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'My Baby Had a Medical Emergency During COVID'</p>
@@ -265,7 +263,7 @@
             </div>
             <div class="myturn-item col">
               <div class="img-turn">
-                <img src="./images/sec2-img3.png" alt="" width="100%">
+                <img src="./images/sec2-img3.png" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'I Got COVID 9 Months Ago and Still Have Symptoms'</p>
@@ -273,7 +271,7 @@
             </div>
             <div class="myturn-item col">
               <div class="img-turn">
-                <img src="./images/sec2-img4.jpg" alt="" width="100%">
+                <img src="./images/sec2-img4.jpg" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'I'm an FBI Trained Former Hostage Negotiator'</p>
@@ -288,7 +286,7 @@
 
             <div class=" myturn-item m-2">
               <div class="img-turn">
-                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+                <img src="./images/sec2-img6.jpg" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'My Baby Had a Medical Emergency During COVID'</p>
@@ -296,7 +294,7 @@
             </div>
             <div class="myturn-item m-2">
               <div class="img-turn">
-                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+                <img src="./images/sec2-img6.jpg" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'I Got COVID 9 Months Ago and Still Have Symptoms'</p>
@@ -304,7 +302,7 @@
             </div>
             <div class="myturn-item m-2">
               <div class="img-turn">
-                <img src="./images/sec2-img6.jpg" alt="" width="100%">
+                <img src="./images/sec2-img6.jpg" alt="stories" class="myturn">
               </div>
               <div class="title-myturn">
                 <p class="title-myturn">'I'm an FBI Trained Former Hostage Negotiator'</p>
@@ -318,7 +316,7 @@
             <h4 class="text-secondary font-weight-bolder mb-2 mt-2 h4 border-bottom border-4">MORE STORIES</h4>
 
             <div class="media mb-2 border-bottom-3">
-              <img src="./images/sec2-img8.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img8.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -331,7 +329,7 @@
               </div>
             </div>
             <div class="media mb-2 border-bottom-3">
-              <img src="./images/sec2-img9.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img9.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -344,7 +342,7 @@
               </div>
             </div>
             <div class="media mb-2 border-bottom-3">
-              <img src="./images/sec2-img10.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img10.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -357,7 +355,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-3">
-              <img src="./images/sec2-img11.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img11.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -370,7 +368,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img12.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img12.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -383,7 +381,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img13.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img13.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -396,7 +394,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img14.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img14.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href=" #" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -409,7 +407,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img15.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img15.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -422,7 +420,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img16.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img16.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -435,7 +433,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img17.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img17.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -448,7 +446,7 @@
               </div>
             </div>
             <div class="media mb-2 mt-2 border-bottom-2">
-              <img src="./images/sec2-img18.jpg" alt="" class="position-relative" width="100px" height="100px">
+              <img src="./images/sec2-img18.jpg" alt="stories" class="morestories-size">
               <div class="media-body align-content-start mt-0 ml-2 border-bottom-3">
                 <a href="#" class="text-weight bolder title-morestories">
                   <h5 class="title-morestories">Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -466,12 +464,13 @@
       <div class="col-12 col-lg-4 col-three">
         <!-- The Debate -->
         <section class="container">
+          <h2 class="d-none">Heading</h2>
           <article class="d-flex flex-column">
 
             <h4 class="font-weight-bolder title-debate">THE DEBATE</h4>
 
             <div class="d-flex align-content-center border-bottom">
-              <img src="./images/card1.png" class="" alt="debate-img" height="70px">
+              <img src="./images/card1.png" class="height-70px" alt="debate-img">
               <div class="p-3">
                 <a href="#" class="font-weight-bolder title2-debate">
                   <h6>"Should Trump Concede? Yes"</h6>
@@ -483,7 +482,7 @@
             <span class="align-self-center text-center text-white rounded-circle bg-dark span-width py-2">VS</span>
 
             <div class="d-flex flex-row-reverse justify-content-between pt-4 border-top border-bottom">
-              <img src="./images/card2.png" class="d-flex " alt="" height="70px">
+              <img src="./images/card2.png" class="d-flex height-70px" alt="stories">
               <div class="p-3">
                 <a href="#" class="font-weight-bolder title2-debate">
                   <h6>Should Trump Concede? Not Yet</h6>
@@ -496,11 +495,12 @@
         </section>
         <!-- Opinion -->
         <section class="TO-REVIEW">
+          <h2 class="d-none">Heading</h2>
           <article>
             <h4 class="font-weight-bolder opinion-title">OPINION</h4>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-2 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title">Cambridge Should Preserve the Freedom to
                     Disrespect</a>
@@ -510,7 +510,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark  card-title">The Electoral College Nightmare That Could
                     Have
@@ -521,7 +521,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title">There's No Stopping America's Political
                     Realignment</a>
@@ -531,7 +531,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title">The Time Is Now for Saudi Arabia To
                     Normalize
@@ -543,7 +543,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title">A British Court Breaks Gender Fever</a>
                   <p class="mt-2 opinion-author">BY ABIGAIL SHRIER</p>
@@ -552,7 +552,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card1.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card1.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title">San Francisco Jon Ossoff</a>
                   <p class="mt-2 opinion-author">BY NEWT GINGRICH</p>
@@ -561,7 +561,7 @@
             </div>
             <div class="d-flex flex-column multiple-cards">
               <div class="d-flex mt-4 align-content-center align-items-start border-bottom border-4 pb-2 content">
-                <img src="./images/card2.png" class="align-content-start mr-3" alt="">
+                <img src="./images/card2.png" class="align-content-start mr-3" alt="stories">
                 <div class="pt-2 multiple-card-title">
                   <a href="#" class="font-weight-bold text-dark card-title"> Don't Lower the Medicare Eligibility
                     Age</a>
@@ -573,13 +573,13 @@
         </section>
         <!-- SIGN UP -->
         <section class="jumbotron border bg-light rounded-0 mt-2 px-2 pb-2 pt-4 col-lg-11 col-md-6 mx-md-auto with-100">
+          <h2 class="d-none">Heading</h2>
           <div class="media d-flex align-items-start mb-3">
             <img class="mr-3" src="images/minilogo.png" alt="Newsweek" style="width: 50px;">
             <div class="media-body h5 text-uppercase text-dark font-weight-bold">
               Start your day with our top 5 articles
 
-              <input type="email" name="email" id="email" placeholder="Email adress" style="width: 195px" ;
-                class="col-sm-12 h5-border rounded-2 mb-1 py-2 mr-2">
+              <input type="email" name="email" id="email" placeholder="Email adress" style="width: 195px;" class="col-sm-12 h5-border rounded-2 mb-1 py-2 mr-2">
               <button type="button" style="width: 195px"
                 class="btn-block text-white text-uppercase font-weight-bolder h4 bg-danger py-2 mr-2">
                 free sign up >
@@ -592,16 +592,14 @@
     </section>
 
     <section class="2nd-section">
+      <h2 class="d-none">Heading</h2>
       <div class="title-inthemagazine d-flex justify-content-center">
-        <img src="./images/minilogo.png" alt="">
-        <h1 class="inmag p-0 mt-1">IN MAGAZINE</h1>
+        <img src="./images/minilogo.png" alt="stories">
+        <h2 class="inmag p-0 mt-1">IN MAGAZINE</h2>
       </div>
 
-      <!-- In the Magazine image to move to next section
-      
-       -->
-
       <section class="d-flex flex-column px-0 mx-0 border mt-4">
+        <h2 class="d-none">Heading</h2>
         <div class="row">
           <div class="col-md-3">
             <div class="position-relative d-flex in-the-mag w-100">
@@ -719,16 +717,19 @@
     </section>
 
     <div class="title-inthemagazine d-flex justify-content-center mt-4">
-      <img src="./images/minilogo.png" alt="">
+      <img src="./images/minilogo.png" alt="stories">
       <h1 class="inmag p-0">EDITOR'S PICK</h1>
     </div>
     <!--EDITOR'S PEAK-->
     <section class="container mb-4 mt-4">
+      <h2 class="d-none">Heading</h2>
       <!-- First editor's grid -->
       <section class="row">
+        <h2 class="d-none">Heading</h2>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
               class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
@@ -742,8 +743,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
               class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
@@ -757,8 +759,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
               class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
@@ -772,8 +775,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
               class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
@@ -787,6 +791,7 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="editors" class="w-100">
             <p
@@ -802,8 +807,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
               class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
@@ -817,8 +823,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -831,8 +838,9 @@
           </p>
         </article>
         <article class="col-lg-3 col-md-6 d-flex flex-column">
+          <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
-            <img src="./images/EDITORSPICK.png" alt="" class="w-100">
+            <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
@@ -848,23 +856,23 @@
 
       <!-- SUBSCRIBE AND NEWS LETTER -->
       <section class="news-section d-flex flex-column flex-lg-row">
+        <h2 class="d-none">Heading</h2>
         <!-- SUBSCRIBE -->
         <div class="row col-12 col-lg-8 p-0 border-top pt-2 pb-3 d-flex flex-column align-items-center">
           <h5 class="text-uppercase text-danger font-weight-bolder roboto align-self-start font-size-16">Subscribe</h5>
           <div class="d-flex flex-column w-100 flex-md-row sub-section mt-50 bg-light-gray p-3">
             <div class="sub-img d-flex justify-content-center col-12 col-md-6">
               <img class="lazyloaded"
-                src="https://d.newsweek.com/en/full/1683391/cover-december-18-2020.jpg?w=170&amp;q=95&amp;f=e1f2c45a14354ef38b88aed621a70ef7">
+                src="https://d.newsweek.com/en/full/1683391/cover-december-18-2020.jpg?w=170&amp;q=95&amp;f=e1f2c45a14354ef38b88aed621a70ef7" alt="stories">
               <img class="lazyloaded"
-                src="https://d.newsweek.com/en/full/1686585/cover-december-25-2020.jpg?w=170&amp;q=95&amp;f=8ceaa9a20e6746bcf1f172885e58b643">
+                src="https://d.newsweek.com/en/full/1686585/cover-december-25-2020.jpg?w=170&amp;q=95&amp;f=8ceaa9a20e6746bcf1f172885e58b643" alt="stories">
             </div>
             <div class="sub-text d-flex flex-column align-items-center align-items-md-start">
-              <h1
-                class="d-flex align-items-start roboto text-weight-bolder font-size-20 font-weight-bolder ml-4">
-                In-depth Stories You Don't See Elsewhere</br>
-                About Topics You Want to Read!</h1>
+              <h2 class="d-flex align-items-start roboto text-weight-bolder font-size-20 font-weight-bolder ml-4">
+                In-depth Stories You Don't See Elsewhere<br>
+                About Topics You Want to Read!</h2>
               <p class=" d-flex text-justify sub-text ml-4">
-                All Access + Weekly Delivery.</br>
+                All Access + Weekly Delivery.<br>
                 Choose A Membership 
                 That's Perfect 
                 for You!</p>
@@ -889,10 +897,10 @@
                 src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5">
             </div>
             <div class=" news-text d-flex flex-column align-items-center">
-              <h1 class="bolder roboto font-size-20 my-2 font-weight-bolder">The Starting 5</h1>
+              <h2 class="bolder roboto font-size-20 my-2 font-weight-bolder">The Starting 5</h2>
               <p class="p-2">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
               <div class="row news-text-button ml-2">
-                <input type="email" name="email" id="email" placeholder="Email adress"
+                <input type="email" name="email" placeholder="Email adress"
                   class="h6-border rounded-2 col-8 ml-3 mb-2">
                 <button type="button"
                   class="btn bg-danger text-light text-uppercase roboto font-size-16 font-weight-bolder ml-3">free
@@ -908,9 +916,9 @@
 
   <footer class="footer container border-top">
     <section class="footer-section-one d-flex flex-column">
-      <div
-        class="d-flex logo-container flex-column flex-md-row justify-content-md-between align-items-md-end border-bottom">
-        <svg class="footer-logo mt-4 mb-2" version="1.1" width="396" height="60" xmlns="http://www.w3.org/2000/svg"
+      <h2 class="d-none">Heading</h2>
+      <div class="d-flex logo-container flex-column flex-md-row justify-content-md-between align-items-md-end border-bottom">
+        <svg class="footer-logo mt-4 mb-2 width-350px" version="1.1" height="60" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
           style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
           <g>
@@ -932,6 +940,7 @@
 
     </section>
     <section class="footer-section-two">
+      <h2 class="d-none">Heading</h2>
       <div class="d-flex mt-2">
         <p class="footer-row1-list-ed text-nowrap font-weight-bolder mr-2">Editions:</p>
         <ul class=" footer-secton-ul d-flex footer-row1-list flex-md-row">
@@ -944,6 +953,7 @@
       </div>
     </section>
     <section>
+      <h2 class="d-none">Heading</h2>
       <ul class="d-flex flex-wrap footer-section-three">
         <li>About Us</li>
         <li>Corrections</li>
