@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
-  <link rel="stylesheet" href="./styles/style-reset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href='https://fonts.googleapis.com/css?family=RobotoCondensed' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/add939e8fb.js" crossorigin="anonymous"></script>
 
 
@@ -19,21 +18,22 @@
 <body class="body">
 
   <!-- this is normal header in desktop -->
-  <header class="container-fluid">
+  <header class="container px-0">
     <nav class="w-100 d-lg-none sticky-top">
       <!-- this code is header in mobile -->
       <div class="d-flex align-items-center justify-content-between background">
         <img class="logo" src="./images/nwlogo.png" alt="Logo">
         <div class="mr-3 d-flex align-items-center">
           <i class="fas fa-user mr-2"></i>
-          <button type="button" class="btn font-weight-bold rounded-pill mr-2 pb-2 first-button" name="subscribe">SUBSCRIBE></button>
+          <button type="button" class="btn font-weight-bold rounded-pill mr-2 pb-2 first-button"
+            name="subscribe">SUBSCRIBE></button>
           <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
 
     <!-- this code is header in MID and LARGE -->
-    <div class=" justify-content-between bg-color align-items-end p-3 bg-danger d-none d-lg-flex">
+    <div class=" justify-content-between bg-color align-items-end p-3 bg-red d-none d-lg-flex">
       <div class="navbar-items">
         <a href="#" class="text-light">18° CDMX, MX</a>
         <p class="text-light">Thu, Dec 03, 2020</p>
@@ -51,7 +51,8 @@
       </div>
       <div>
         <a href=""><span class="font-weight-bold text-light roboto">LOGIN</span></a>
-        <button type="button" class="btn font-weight-bold rounded-pill first-button pb-2" name="subscribe">SUBSCRIBE></button>
+        <button type="button" class="btn font-weight-bold rounded-pill first-button pb-2"
+          name="subscribe">SUBSCRIBE></button>
       </div>
     </div>
     <nav class="row container top-nav d-none d-lg-flex">
@@ -87,13 +88,13 @@
   <main class="main container">
     <section class="top-section row">
       <h2 class="d-none">Heading</h2>
-      <div class="col-md-5 col-lg-4 col-one">
+      <div class="col-md-5 col-lg-4 col-one pl-0 mr-0">
         <!-- Featured Stories -->
-        <section class="col 2 container sec-2 d-flex d-md-none">
+        <section class="col 2 container sec-2 d-flex d-md-none px-0">
           <h2 class="d-none">Heading</h2>
           <article class="small-cards">
 
-            <h4 class="text-secondary font-weight-bolder h4  mb-2 border-bottom ">TOP STORY</h4>
+            <h4 class="text-secondary font-weight-bolder h4 mb-2 border-bottom ">TOP STORY</h4>
 
             <div class="card-group">
               <article class="card">
@@ -205,14 +206,17 @@
             <article class="card-group">
               <div class="card">
                 <div class="image position relative d-flex">
-                  <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top width-350px" alt="first img">
+                  <img src="./images/eric-garcetti-la-press-briefing-march-2020.jpg" class="card-img-top width-350px"
+                    alt="first img">
                   <a href="category"
                     class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 img-link">NEWS</a>
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title"><a href="#" class="text-dark">Eric Garcetti's L.A. Stay-At-Home Order Blasted By Californians</a></h3>
-                  <p class="card-text">The mayor's latest lockdown order came as the total confirmed cases in Los Angeles surpassed
-                      414,500.</p>
+                  <h3 class="card-title"><a href="#" class="text-dark">Eric Garcetti's L.A. Stay-At-Home Order Blasted
+                      By Californians</a></h3>
+                  <p class="card-text">The mayor's latest lockdown order came as the total confirmed cases in Los
+                    Angeles surpassed
+                    414,500.</p>
                 </div>
               </div>
             </article>
@@ -574,18 +578,26 @@
         <!-- SIGN UP -->
         <section class="jumbotron border bg-light rounded-0 mt-2 px-2 pb-2 pt-4 col-lg-11 col-md-6 mx-md-auto with-100">
           <h2 class="d-none">Heading</h2>
-          <div class="media d-flex align-items-start mb-3">
-            <img class="mr-3" src="images/minilogo.png" alt="Newsweek" style="width: 50px;">
-            <div class="media-body h5 text-uppercase text-dark font-weight-bold">
-              Start your day with our top 5 articles
 
-              <input type="email" name="email" id="email" placeholder="Email adress" style="width: 195px;" class="col-sm-12 h5-border rounded-2 mb-1 py-2 mr-2">
-              <button type="button" style="width: 195px"
-                class="btn-block text-white text-uppercase font-weight-bolder h4 bg-danger py-2 mr-2">
-                free sign up >
-              </button>
-
+          <div class="media d-flex flex-column align-items-start mb-3">
+            <div class="d-flex">
+              <div class="d-flex justify-content-end align-items-center mb-2 mr-2">
+                <img class="" src="images/minilogo.png" alt="Newsweek" id="sign-up-firstminilogo">
+              </div>
+              <h5 class="media-body h5 text-uppercase text-dark font-weight-bold roboto">
+                Start your day with our top 5 articles
+              </h5>
             </div>
+
+
+            <input type="email" name="email" id="email" placeholder="Email address"
+              class="col-sm-12 mb-1 py-2 mr-2 w-100">
+            <button type="button"
+              class="btn-block text-white text-uppercase font-weight-bolder h4 bg-red py-2 mr-2 w-10 border-none">
+              free sign up >
+            </button>
+
+
           </div>
         </section>
       </div>
@@ -605,7 +617,7 @@
             <div class="position-relative d-flex in-the-mag w-100">
               <img src="./images/december-issue.png" alt="december issue" class="col-12 nov-20 p-0 w-100">
               <p
-                class="category position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                class="category position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2">
                 DECEMBER 21 ISSUE
               </p>
             </div>
@@ -620,8 +632,8 @@
             </a>
             <div class="mt-2">
               <div class="d-flex">
-                <p class="bg-orange text-light h5 font-weight-bold bg-danger p-1 my-1 roboto">BUSSINES</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+                <p class="bg-orange text-light h5 font-weight-bold bg-red p-1 my-1 roboto">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">POLITICS</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -634,8 +646,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger roboto">PERISCOPE</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red roboto">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">CULTURE</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
@@ -648,8 +660,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">POLITICS</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -662,8 +674,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">CULTURE</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
@@ -676,8 +688,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">POLITICS</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -690,8 +702,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">PERISCOPE</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">CULTURE</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red">PERISCOPE</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">CULTURE</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 The 10 Best Moves to Make with Your Money Before 2020 Ends
@@ -704,8 +716,8 @@
             </a>
             <div class="col-12 mt-2">
               <div class="d-flex flex-">
-                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-danger">BUSSINES</p>
-                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-danger">POLITICS</a>
+                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1 roboto bg-red">BUSSINES</p>
+                <a href="#" class="text-orange h5 font-weight-bold p-1 m-1 roboto text-red">POLITICS</a>
               </div>
               <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange roboto">
                 Republican, Dem Judges Have Turned on Trump—and Not Just On the Election
@@ -731,7 +743,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -747,7 +759,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -763,7 +775,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -779,7 +791,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -795,7 +807,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="editors" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -811,7 +823,7 @@
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
             <p
-              class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
+              class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2 roboto">
               TECH & SCIENCE
             </p>
           </div>
@@ -826,7 +838,7 @@
           <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
-            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
           </div>
@@ -841,7 +853,7 @@
           <h2 class="d-none">Heading</h2>
           <div class="image position-relative d-flex">
             <img src="./images/EDITORSPICK.png" alt="stories" class="w-100">
-            <p class="position-absolute bg-light text-danger font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+            <p class="position-absolute bg-light text-red font-weight-bold align-self-end categorie mb-0 px-3 py-2">
               TECH & SCIENCE
             </p>
           </div>
@@ -854,18 +866,52 @@
         </article>
       </section>
 
+      <section class="U.S d-flex flex-column">
+        <h2 class="text-orange font-weight-bold text-red">U.S.</h2>
+        <div class="row">
+          <div class="col-md-4 w-90">
+            <div class="class">
+              <img src="./images/lastsection-1.png" alt="" class="class">
+              <p class="titlebottom1">How to Buy Bitcoin Now That It's Passed a $20,000 Valuation</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-row w-90">
+            <div class="class">
+              <img src="./images/lastsection2.png" alt="" class="">
+              <p class="titlebottom2">COVID Outbreak on Ferry Leaves Nearly 400 People Stranded</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column w-100">
+            <div class="class">
+              <img src="./images/lastsection3.png" alt="" class="class">
+              <p class="class">FDA Approves Cheapest At-Home COVID Test Yet, but Prescription Is Needed</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection4.png" alt="" class="class">
+              <p class="class">Tyson Fires 7 Employees Accused of Betting on COVID-19 Spread Among Workers</p>
+            </div>
+            <div class="class">
+              <img src="./images/lastsection5.png" alt="" class="class">
+              <p class="class">Asian American Lawmakers Lobby for Julie Su to Join Biden Cabinet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- SUBSCRIBE AND NEWS LETTER -->
       <section class="news-section d-flex flex-column flex-lg-row">
         <h2 class="d-none">Heading</h2>
         <!-- SUBSCRIBE -->
         <div class="row col-12 col-lg-8 p-0 border-top pt-2 pb-3 d-flex flex-column align-items-center">
-          <h5 class="text-uppercase text-danger font-weight-bolder roboto align-self-start font-size-16">Subscribe</h5>
+          <h5 class="text-uppercase text-red font-weight-bolder roboto align-self-start font-size-16">Subscribe</h5>
           <div class="d-flex flex-column w-100 flex-md-row sub-section mt-50 bg-light-gray p-3">
             <div class="sub-img d-flex justify-content-center col-12 col-md-6">
               <img class="lazyloaded"
-                src="https://d.newsweek.com/en/full/1683391/cover-december-18-2020.jpg?w=170&amp;q=95&amp;f=e1f2c45a14354ef38b88aed621a70ef7" alt="stories">
+                src="https://d.newsweek.com/en/full/1683391/cover-december-18-2020.jpg?w=170&amp;q=95&amp;f=e1f2c45a14354ef38b88aed621a70ef7"
+                alt="stories">
               <img class="lazyloaded"
-                src="https://d.newsweek.com/en/full/1686585/cover-december-25-2020.jpg?w=170&amp;q=95&amp;f=8ceaa9a20e6746bcf1f172885e58b643" alt="stories">
+                src="https://d.newsweek.com/en/full/1686585/cover-december-25-2020.jpg?w=170&amp;q=95&amp;f=8ceaa9a20e6746bcf1f172885e58b643"
+                alt="stories">
             </div>
             <div class="sub-text d-flex flex-column align-items-center align-items-md-start">
               <h2 class="d-flex align-items-start roboto text-weight-bolder font-size-20 font-weight-bolder ml-4">
@@ -873,11 +919,11 @@
                 About Topics You Want to Read!</h2>
               <p class=" d-flex text-justify sub-text ml-4">
                 All Access + Weekly Delivery.<br>
-                Choose A Membership 
-                That's Perfect 
+                Choose A Membership
+                That's Perfect
                 for You!</p>
               <button type="button"
-                class="text-white btn text-uppercase font-weight-bolder h4 bg-danger py-2 mr-2 ml-4 width-120px">
+                class="text-white btn text-uppercase font-weight-bolder h4 bg-red py-2 mr-2 ml-4 width-120px">
                 subscribe >
               </button>
             </div>
@@ -890,7 +936,7 @@
         </div>
         <!-- NEWSLETTER -->
         <div class="row col-12 col-lg-4 p-0 border-top pt-2">
-          <h4 class="text-uppercase text-danger text-weight-bolder font-size-16 font-weight-bolder">NEWSLETTER</h4>
+          <h4 class="text-uppercase text-red text-weight-bolder font-size-16 font-weight-bolder">NEWSLETTER</h4>
           <div class="d-flex flex-column flex-md-row news-section border p-0 pb-4">
             <div class=" col-12 col-md-6 p-0">
               <img class="news-section-img w-100 height-170px" alt="#"
@@ -900,10 +946,9 @@
               <h2 class="bolder roboto font-size-20 my-2 font-weight-bolder">The Starting 5</h2>
               <p class="p-2">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
               <div class="row news-text-button ml-2">
-                <input type="email" name="email" placeholder="Email adress"
-                  class="h6-border rounded-2 col-8 ml-3 mb-2">
+                <input type="email" name="email" placeholder="Email adress" class="h6-border rounded-2 col-8 ml-3 mb-2">
                 <button type="button"
-                  class="btn bg-danger text-light text-uppercase roboto font-size-16 font-weight-bolder ml-3">free
+                  class="btn bg-red text-light text-uppercase roboto font-size-16 font-weight-bolder ml-3">free
                   sign up ></button>
               </div>
             </div>
@@ -917,8 +962,9 @@
   <footer class="footer container border-top">
     <section class="footer-section-one d-flex flex-column">
       <h2 class="d-none">Heading</h2>
-      <div class="d-flex logo-container flex-column flex-md-row justify-content-md-between align-items-md-end border-bottom">
-        <svg class="footer-logo mt-4 mb-2 width-350px" version="1.1" height="60" xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="d-flex logo-container flex-column flex-md-row justify-content-md-between align-items-md-end border-bottom">
+        <svg class="footer-logo mt-4 footer w-100" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
           style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
           <g>
@@ -939,11 +985,11 @@
       <!-- End: Social Icons -->
 
     </section>
-    <section class="footer-section-two">
+    <section class="d-flex footer-section-two">
       <h2 class="d-none">Heading</h2>
       <div class="d-flex mt-2">
-        <p class="footer-row1-list-ed text-nowrap font-weight-bolder mr-2">Editions:</p>
-        <ul class=" footer-secton-ul d-flex footer-row1-list flex-md-row">
+        <p class="footer-row1-list-ed text-nowrap font-weight-bolder">Editions:</p>
+        <ul class=" footer-secton-ul d-flex footer-row1-list flex-md-row align-content-center">
           <li class="mr-2 text-nowrap">U.S. Edition</li>
           <li class="mr-2 text-nowrap"><a href="https://www.newsweekjapan.jp/">日本</a></li>
           <li class="mr-2">Pakistan</li>

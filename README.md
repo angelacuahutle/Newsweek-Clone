@@ -28,11 +28,11 @@ It is a nicely done layout for Newsweek Clone using flexbox, bootstrap and a nic
 - GitHub: [@angelacuahutle](https://github.com/angelacuahutle)
 - Twitter: [@AngelaCunaDev](https://twitter.com/AngelaCunaDev)
 
-## 🤝 
+## Issues 🤝 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/angelacuahutle/TheNextWeb_Clone/issues).
+Feel free to check the [issues page](https://github.com/angelacuahutle/Newsweek-Clone/issues).
 
 ## Show your support
 
@@ -40,7 +40,7 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 ![microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
