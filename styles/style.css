@@ -331,6 +331,10 @@ table {
   margin-bottom: 0;
 }
 
+.font-size-22 {
+  font-size: 22px;
+}
+
 .font-size-20 {
   font-size: 20px;
 }
@@ -398,6 +402,15 @@ table {
   top: 20px;
   right: 50px;
   z-index: 2;
+}
+
+.title-us {
+  font-size: 20px;
+}
+
+.titlebottom2 {
+  font-size: 17px;
+  font-family: 'Roboto, Condensed', sans-serif;
 }
 
 .footer-section-two {
