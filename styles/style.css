@@ -300,7 +300,6 @@ table {
 #sign-up-firstminilogo {
   width: 29px;
   height: 29px;
-  
 }
 
 .hidden {
@@ -379,7 +378,7 @@ table {
   width: 320px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .no-element {
     max-width: 650px;
     max-height: 90px;
@@ -390,11 +389,11 @@ table {
   }
 
   .lg-search-bar {
-    width: 75px;
+    width: 95px;
   }
 
   .lg-search-bar > input {
-    width: 65px;
+    width: 85px;
     border: none;
     margin-left: 5px;
   }
@@ -411,19 +410,19 @@ table {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .tags a {
-    color: black;
     font-weight: bolder;
-    font-size: 11px;
+    font-size: 16px;
+    color: black;
   }
 
   .top-nav {
+    border-radius: 25px;
+    padding-left: 30px;
     margin-top: -10px;
     background-color: white;
-    width: 90%;
-    border-radius: 25px;
-    max-width: 1200px;
+    width: auto;
   }
 
   .second-nav {
@@ -444,22 +443,6 @@ table {
 
   .subscribe-btn-newsletter {
     color: red;
-  }
-}
-
-@media (min-width: 1440px) {
-  .tags a {
-    color: black;
-    font-weight: bolder;
-    font-size: 16px;
-  }
-
-  .top-nav {
-    margin-top: -10px;
-    background-color: white;
-    width: 90%;
-    border-radius: 25px;
-    padding-left: 30px;
   }
 
   .footer-section-three > li {
