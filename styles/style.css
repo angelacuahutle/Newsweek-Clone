@@ -315,6 +315,10 @@ table {
   background-color: red;
 }
 
+.bg-light-gray {
+  background-color: #f4f5f6;
+}
+
 .text-red {
   color: red;
 }
@@ -351,10 +355,15 @@ table {
   height: 170px;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .footer-logo {
   fill: red;
   width: 236px;
   height: 36px;
+  margin-bottom: 10px;
 }
 
 .width-350px {
@@ -372,6 +381,23 @@ table {
 
 .height-70px {
   height: 70px;
+}
+
+.sub-img {
+  margin-bottom: 30px;
+}
+
+.thumbnail {
+  position: relative;
+  left: 50px;
+  z-index: 1;
+}
+
+.thumbnail-2 {
+  position: relative;
+  top: 20px;
+  right: 50px;
+  z-index: 2;
 }
 
 .footer-section-two {
@@ -402,11 +428,8 @@ table {
     height: 250px;
   }
 
-  .news-section-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
+  .news-text-button {
+    height: 100%;
   }
 }
 
@@ -429,6 +452,10 @@ table {
     margin-bottom: 40px;
   }
 
+  .h-lg-100 {
+    height: 100%;
+  }
+
   .col-one {
     position: sticky;
     top: 0;
@@ -445,8 +472,42 @@ table {
     color: red;
   }
 
+  .sub-text {
+    margin-left: -30px;
+  }
+
   .footer-section-three > li {
     padding-right: 13px;
     padding-bottom: 10px;
+  }
+
+  .expand-newsletter-img > img {
+    height: 100%;
+  }
+
+  .news-section {
+    height: 19.5rem;
+  }
+
+  .newsletter-button {
+    height: 40px;
+    width: 100%;
+  }
+
+  .newsletter-div {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+
+  .height-40px {
+    height: 40px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer-logo {
+    margin-left: 0;
   }
 }
