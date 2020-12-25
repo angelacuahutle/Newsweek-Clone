@@ -19,7 +19,7 @@ It is a nicely done layout for Newsweek Clone using flexbox, bootstrap and a nic
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/angelacuahutle/Newsweek-Clone/e27c791dbd6b028b6caf9457a75cfefb70f999bc/index.html)
+[Live Demo Link](https://rawcdn.githack.com/angelacuahutle/Newsweek-Clone/a29b646a85d7521b85985e6cc6827de5b9c183ea/index.html)
 
 ## Authors
 
