@@ -4,9 +4,9 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](./images/screenshot.png)
+![screenshot](./assets/phone-capstone.png) (./assets/shoot-cap.png)
 
-It is a nicely done layout for Newsweek Clone using flexbox, bootstrap and a nice touch of position sticky!
+It is a functional website of an Academic Event using flexbox, bootstrap and a nice touch of position sticky!
 
 ## Built With
 
@@ -19,9 +19,9 @@ It is a nicely done layout for Newsweek Clone using flexbox, bootstrap and a nic
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/angelacuahutle/Newsweek-Clone/a29b646a85d7521b85985e6cc6827de5b9c183ea/index.html)
+[Live Demo Link](https://rawcdn.githack.com/angelacuahutle/CapstoneProject/b300c4d767cb00d94784db00e008c41619a58bc9/index.html)
 
-## Authors
+## Author
 
 👤 **Angela Cuahutle**
 
